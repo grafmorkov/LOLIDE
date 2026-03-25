@@ -8,7 +8,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 qt_standard_project_setup()
+
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+
 set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_SOURCE_DIR}/ui)
+
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 qt_add_executable(LOLIDE
     src/main.cpp
@@ -16,12 +23,12 @@ qt_add_executable(LOLIDE
     include/mainwindow.h
     ui/mainwindow.ui
 )
+
 target_link_libraries(LOLIDE PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
 target_include_directories(LOLIDE
     PUBLIC ${PROJECT_SOURCE_DIR}/include
 )
-
 
 set_target_properties(LOLIDE PROPERTIES
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}

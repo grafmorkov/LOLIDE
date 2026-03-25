@@ -1,0 +1,3 @@
+set(__QT_DEPLOY_TARGET_LOLIDE_FILE C:/Users/Zero/repos/LOLIDE/LOLIDE/Debug/LOLIDE.exe)
+set(__QT_DEPLOY_TARGET_LOLIDE_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_LOLIDE_RUNTIME_DLLS C:/Qt/6.11.0/msvc2022_64/bin/Qt6Widgetsd.dll;C:/Qt/6.11.0/msvc2022_64/bin/Qt6Guid.dll;C:/Qt/6.11.0/msvc2022_64/bin/Qt6Cored.dll)
